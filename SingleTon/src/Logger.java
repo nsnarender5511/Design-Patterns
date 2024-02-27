@@ -1,4 +1,4 @@
-public class Logger {
+public class Logger implements Cloneable{
 
     public static Logger instance;
     static {
@@ -17,5 +17,9 @@ public class Logger {
     }
     void log(String l){
         System.out.println(l);
+    }
+
+    public Logger clone(){
+        return new Logger();
     }
 }
