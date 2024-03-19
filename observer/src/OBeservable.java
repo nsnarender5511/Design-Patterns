@@ -1,4 +1,4 @@
-public interface Obeservable {
+public interface OBeservable {
 
     void add(Observer user);
 
